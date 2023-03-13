@@ -1,0 +1,13 @@
+[submodule "classbench-generators"]
+	path = deps/classbench-generators
+	url = https://github.com/sebymiano/classbench-generators.git
+[submodule "dpdk-burst-replay"]
+	path = deps/dpdk-burst-replay
+	url = https://github.com/FraudBuster/dpdk-burst-replay.git
+[submodule "dpdk-stable"]
+	path = deps/dpdk-stable
+	url = https://github.com/DPDK/dpdk-stable.git
+	shallow = true
+[submodule "ebpf-sketches"]
+	path = deps/ebpf-sketches
+	url = https://github.com/QMUL-EECS-Networks-Systems/ebpf-sketches.git
