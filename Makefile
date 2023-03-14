@@ -4,7 +4,7 @@ NUMA_ID ?= 0
 PCI_DEV_ID ?= 0000:00:00.0
 DPDK_DRIVER ?= vfio-pci
 
-SKIP_GLOBAL_DEPS ?=
+SKIP_INSTALL_GLOBAL_DEPS ?=
 SKIP_INSTALL_DPDK ?=
 SKIP_INSTALL_DPDK_BURST_REPLAY ?=
 
@@ -94,7 +94,7 @@ output.pcap: deps/univ1_trace/univ1_pt1
 deps/univ1_trace/univ1_pt1: deps/univ1_trace.tgz
 	$(call msg,Extracting traces)
 	$(Q)rm -rf deps/univ1_trace
-	$(Q)mkdir deps/univ1_trace && cd deps/univ1_trace && tar xzf ../univ1_trace.tgz
+	$(Q)mkdir deps/univ1_trace && cd deps/univ1_trace && tar xzmf ../univ1_trace.tgz
 
 deps/univ1_trace.tgz:
 	$(call msg,Downloading traces)
